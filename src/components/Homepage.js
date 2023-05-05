@@ -5,9 +5,9 @@ function Homepage(props){
 
     function selectCourse(id){
         navigate('/course/' + id);
-    }
-
-    console.log('homepage props', props);
+    }   
+ 
+    console.log('homepage props', props); 
 
     return(
         <div>
@@ -17,7 +17,7 @@ function Homepage(props){
             <ul className="list-group">
                 {props.entry?.lessons?.map((lesson) =>
                     <li className="list-group-item list-click" key={lesson.uid} onClick={() => selectCourse(lesson.uid)} {...lesson.$.title}>
-                        {lesson.title}
+                        {lesson.lesson_title_}
                     </li>
                 )}
             </ul>

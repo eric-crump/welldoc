@@ -58,7 +58,7 @@ function Course(){
         return(
             <div className="container-fluid">
                 <div className="vstack text-center">
-                    <h1 className="text-center">{entry?.title}</h1> 
+                    <h1 className="text-center">{entry?.lesson_title_}</h1> 
                     <p className="text-center">{entry?.en_estimated_duration}</p> 
                     {images} 
                 </div>
