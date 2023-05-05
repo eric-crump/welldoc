@@ -12,7 +12,7 @@ function Homepage(props){
     return(
         <div>
             <h1 className="text-center" {...props.entry?.$?.title}>{props.entry?.title}</h1>
-            <img src={props.entry?.image?.url} {...props.entry?.image?.$?.url}/>
+            <img className="img-fluid" src={props.entry?.image?.url} {...props.entry?.image?.$?.url}/>
             <p {...props.entry?.$?.description}>{props.entry?.description}</p>
             <ul className="list-group">
                 {props.entry?.lessons?.map((lesson) =>
